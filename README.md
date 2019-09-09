@@ -1,2 +1,3 @@
 # predict-the-payment
-A classification model to classify if payment made to a doctor is for research purpose or not.
+A classification model to classify if payment made to a doctor is for research purpose or not. The dataset is taken from https://www.cms.gov/OpenPayments/Explore-the-Data/Dataset-Downloads.html. There are too many features in this dataset and an initial visualization is made to choose which features contribute to the target. The dataset also has large number of missing values in many features. Features that do not have more than 50% values are dropped. After visualizing and removing a few features from the dataset, certain features are knn imputed to account for missing values. Wide variety of models such as random forest, boosting and logistic regression are fitted. Best AUC is 97% with Ranom forest model.
+
